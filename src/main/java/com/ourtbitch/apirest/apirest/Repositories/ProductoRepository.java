@@ -1,9 +1,13 @@
-package com.ourtbitch.apirest.apirest.Repositories;
+package com.sergiecode.apirest.apirest;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.ourtbitch.apirest.apirest.Entiries.Producto;
+@SpringBootApplication
+public class ApirestApplication {
 
-public interface ProductoRepository extends JpaRepository<Producto, Long>{
-    
+	public static void main(String[] args) {
+		SpringApplication.run(ApirestApplication.class, args);
+	}
+
 }
