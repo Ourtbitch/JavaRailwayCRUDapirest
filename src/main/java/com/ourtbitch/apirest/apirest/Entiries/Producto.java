@@ -1,4 +1,4 @@
-package com.ourtbitch.apirest.apirest.Entiries;
+package com.sergiecode.apirest.apirest.Entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,7 +11,7 @@ public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nombre ;
+    private String nombre;
     private double precio;
     
     public Long getId() {
@@ -32,5 +32,8 @@ public class Producto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
     
+
 }
+
